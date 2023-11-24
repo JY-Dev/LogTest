@@ -16,9 +16,8 @@ public class LogMetaDataFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println(Thread.currentThread().getId());
         HttpServletRequest servletRequest = (HttpServletRequest) request;
-        MDC.put("host" , servletRequest.getHeader("Host"));
+        MDC.put("path" , servletRequest.getRequestURI());
         MDC.put("method", servletRequest.getMethod());
         chain.doFilter(request, response);
     }

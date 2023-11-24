@@ -1,56 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="debug" monitorInterval="5">
+<Configuration status="info" monitorInterval="5">
     <!--공통 속성 설정 -->
     <Properties>
         <Property name="logFileName">local</Property>
         <Property name="consoleLayout">[%d{yyyy-MM-dd HH:mm:ss}] [%-5p] [%c{1}:%L] - %m%n</Property>
-        <Property name="layoutPattern">%style{%d{yyyy/MM/dd HH:mm:ss,SSS}}{cyan} %highlight{[%-5p]}{FATAL=bg_red, ERROR=red, INFO=green, DEBUG=blue}  [%C] %style{[%t]}{yellow}- %m%n</Property>
+        <Property name="layoutPattern">%style{%d{yyyy/MM/dd HH:mm:ss,SSS}}{cyan} %highlight{[%-5p]}{FATAL=bg_red,
+            ERROR=red, INFO=green, DEBUG=blue} [%C] %style{[%t]}{yellow}- %m%n
+        </Property>
         <Property name="fileLayout">%d [%t] %-5level %c(%M:%L) - %m%n</Property>
+        <SpringProfile name="dev">
+            <Property name="app">dev</Property>
+        </SpringProfile>
     </Properties>
 
-    <!-- Log Appender 설정 -->
+
+    <SpringProfile name="dev | stage">
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
-            <PatternLayout pattern="${layoutPattern}" disableAnsi = "false"/>
+            <PatternLayout pattern="${layoutPattern}" disableAnsi="false"/>
         </Console>
-        <!--ConsoleAppender, RollingFileAppneder -->
         <RollingFile name="file"
-                     fileName="logs/${logFileName}.log"
+                     fileName="logs/application.log"
                      filePattern="logs/${logFileName}.%d{yyyy-MM-dd-hh}.log.zip">
             <JsonLayout>
-                <KeyValuePair key="application" value="${spring:app.name}"/>
-                <KeyValuePair key="host" value="${ctx:host}"/>
+                <KeyValuePair key="application" value="${spring:spring.application.name}"/>
+                <KeyValuePair key="path" value="${ctx:path}"/>
                 <KeyValuePair key="method" value="${ctx:method}"/>
             </JsonLayout>
             <Policies>
                 <TimeBasedTriggeringPolicy
                         modulate="true"
-                        interval="12" /><!-- 시간별 로그 파일 생성-->
+                        interval="12"/><!-- 시간별 로그 파일 생성-->
             </Policies>
-            <DefaultRolloverStrategy max="5" fileIndex="min" > <!-- 롤링 파일 5개 까지 생성 -->
+            <DefaultRolloverStrategy max="5" fileIndex="min"> <!-- 롤링 파일 5개 까지 생성 -->
                 <Delete basePath="/logs" maxDepth="3">
-                    <IfLastModified age="3d" />
+                    <IfLastModified age="3d"/>
                 </Delete>
             </DefaultRolloverStrategy>
         </RollingFile>
 
     </Appenders>
 
-    <!--TRACE > DEBUG > INFO > WARN > ERROR > FATAL -->
-    <!--Log가 찍힐 대상 설정.-->
     <Loggers>
-        <!-- 스프링 프레임워크에서 찍는건 level을 info로 설정 -->
-        <logger name="org.springframework" level="info" additivity="false">
+        <Logger name="org.springframework" level="info">
             <AppenderRef ref="console"/>
             <AppenderRef ref="file"/>
-        </logger>
+        </Logger>
 
-        <logger name="com.jykim.logtest" level="info" additivity="false">
+        <Logger name="com.jykim.logtest" level="info">
             <AppenderRef ref="console"/>
             <AppenderRef ref="file"/>
-        </logger>
+        </Logger>
 
         <!-- ROOT logger-->
-        <Root level="info"></Root>
+        <Root level="info">
+            <AppenderRef ref="file"/>
+        </Root>
     </Loggers>
+
+    </SpringProfile>
 </Configuration>
