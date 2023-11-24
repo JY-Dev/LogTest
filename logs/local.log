@@ -1,0 +1,323 @@
+{
+  "instant" : {
+    "epochSecond" : 1700806191,
+    "nanoOfSecond" : 561148000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.LogTestApplication",
+  "message" : "Starting LogTestApplication using Java 17.0.8.1 with PID 2287 (/Users/jaeyoung/Spring/LogTest/build/classes/java/main started by jaeyoung in /Users/jaeyoung/Spring/LogTest)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806191,
+    "nanoOfSecond" : 590120000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.LogTestApplication",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806191,
+    "nanoOfSecond" : 880048000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port 8080 (http)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806191,
+    "nanoOfSecond" : 901437000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "message" : "Root WebApplicationContext: initialization completed in 297 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806192,
+    "nanoOfSecond" : 13482000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port 8080 (http) with context path ''",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806192,
+    "nanoOfSecond" : 16875000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.LogTestApplication",
+  "message" : "Started LogTestApplication in 0.574 seconds (process running for 5.947)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806194,
+    "nanoOfSecond" : 323784000
+  },
+  "thread" : "http-nio-8080-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Initializing Servlet 'dispatcherServlet'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806194,
+    "nanoOfSecond" : 325257000
+  },
+  "thread" : "http-nio-8080-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Completed initialization in 1 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700806194,
+    "nanoOfSecond" : 335867000
+  },
+  "thread" : "http-nio-8080-exec-1",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.TestController",
+  "message" : "asdfasdf",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "application" : "${application.name}",
+  "host" : "localhost:8080",
+  "method" : "GET"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808060,
+    "nanoOfSecond" : 613063000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.LogTestApplication",
+  "message" : "Starting LogTestApplication using Java 17.0.8.1 with PID 2398 (/Users/jaeyoung/Spring/LogTest/build/classes/java/main started by jaeyoung in /Users/jaeyoung/Spring/LogTest)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808060,
+    "nanoOfSecond" : 644479000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.LogTestApplication",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808060,
+    "nanoOfSecond" : 937798000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port 8080 (http)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808060,
+    "nanoOfSecond" : 958127000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "message" : "Root WebApplicationContext: initialization completed in 300 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808061,
+    "nanoOfSecond" : 71622000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port 8080 (http) with context path ''",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808061,
+    "nanoOfSecond" : 75404000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.LogTestApplication",
+  "message" : "Started LogTestApplication in 0.573 seconds (process running for 5.94)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808063,
+    "nanoOfSecond" : 385237000
+  },
+  "thread" : "http-nio-8080-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Initializing Servlet 'dispatcherServlet'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808063,
+    "nanoOfSecond" : 386219000
+  },
+  "thread" : "http-nio-8080-exec-1",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Completed initialization in 1 ms",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "${ctx:host}",
+  "method" : "${ctx:method}"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808063,
+    "nanoOfSecond" : 396787000
+  },
+  "thread" : "http-nio-8080-exec-1",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.TestController",
+  "message" : "asdfasdf",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 26,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "localhost:8080",
+  "method" : "GET"
+}
+{
+  "instant" : {
+    "epochSecond" : 1700808063,
+    "nanoOfSecond" : 959857000
+  },
+  "thread" : "http-nio-8080-exec-3",
+  "level" : "INFO",
+  "loggerName" : "com.jykim.logtest.TestController",
+  "message" : "asdfasdf",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 28,
+  "threadPriority" : 5,
+  "application" : "test",
+  "host" : "localhost:8080",
+  "method" : "GET"
+}
